@@ -95,3 +95,8 @@ button:focus-visible {
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}

@@ -6,7 +6,7 @@ import DeckOfCards from "./components/DeckOfCards";
 import CounterExample from "./components/CounterExample";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("cats");
+  const [currentPage, setCurrentPage] = useState("counterExample");
 
   return (
     <>
@@ -18,17 +18,20 @@ function App() {
       </h1>
 
       <div className="flexGapStyle">
+        <button onClick={() => setCurrentPage("counterExample")}>Counter Example</button>
         <button onClick={() => setCurrentPage("cats")}>Cats</button>
         <button onClick={() => setCurrentPage("deckOfCards")}>Deck of Cards</button>
         <button onClick={() => setCurrentPage("pokemon")}>Pokemon</button>
-        <button onClick={() => setCurrentPage("counterExample")}>Counter Example</button>
       </div>
 
       <h2>Current page: {currentPage}</h2>
 
       {currentPage === "cats" && <Cats />}
       {currentPage === "deckOfCards" && <DeckOfCards />}
-      {currentPage === "pokemon" && <Pokemon />}
+      {currentPage === "pokemon" && <>
+        <Pokemon pokemonName="pikachu" />
+        <Pokemon pokemonName="charizard" />
+      </>}
       {currentPage === "counterExample" && <CounterExample />}
     </>
   );
