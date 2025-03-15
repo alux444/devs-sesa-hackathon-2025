@@ -31,6 +31,7 @@ function App() {
       {currentPage === "pokemon" && <>
         <Pokemon pokemonName="pikachu" />
         <Pokemon pokemonName="charizard" />
+        <Pokemon pokemonName="wailord" />
       </>}
       {currentPage === "counterExample" && <CounterExample />}
     </>
