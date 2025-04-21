@@ -12,7 +12,7 @@ Feel free to reach out to any exec if you're struggling with these steps
 
 ## Cloning the repository
 
-- In the terminal, run `git clone https://github.com/alux444/devs-sesa-hackathon-2025.git`,
+- Follow the instructions on GitHub to clone this repo
 
 ## Running the app
 
